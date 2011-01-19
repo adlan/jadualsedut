@@ -1,0 +1,40 @@
+JadualSedut
+===========
+
+This a simple script for those who're too lazy to click through ICRESS
+just to get class timetables. Use this at your own risk and please compare
+with your friend's timetable. I've used this during my studies without any
+problem though.
+
+Note:
+Please inform me if faculty/campus code is changed because i'm no longer
+a student there or better, you can fork this project, make changes yourself
+and send me a pull request.
+
+Requirements
+------------
+
+  * Python >= 2.6 - http://www.python.org/
+  * Beautiful Soup - http://www.crummy.com/software/BeautifulSoup/
+
+Usage
+-----
+
+Usage:
+   jadualSedut.py -f FACULTYCODE -c COURSECODE [-o FILENAME]
+Optons:
+   -f, --faculty <faculty/campus code> Faculty code to fetch from.
+   -c, --course <course code>          Time table for course to fetch.
+   -g, --group <group code>            Filter by group code.
+   -o, --output <filename>             Output to file.
+   -l, --list                          List all campus/faculty code.
+   -h, --help                          Print this message.
+
+
+Example:
+
+  $ python2 jadualSedut.py -f CS -c itt552
+  ITT552
+  [CS2254A]  10:30am - 12:20am  Tuesday    TH04(CS)
+  [CS2254A]   2:10pm - 4:00pm   Wednesday  M01(CS)
+
